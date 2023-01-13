@@ -1,0 +1,24 @@
+
+#include "stdio.h"
+struct people{
+    char name[20];
+    int age;
+    char sex[20];
+    int height;
+    int weight;
+};
+int main(){
+    struct people cjh={
+        "chenjiahua",
+        20,
+        "male",
+        178,
+        120
+    };
+    struct people *p=&cjh;
+    printf("name:%s\n",cjh.name);
+    printf("age:%d\n",p->age);
+    printf("sex:%s\n",p->sex);
+    printf("height:%d\n",p->height);
+    printf("weight:%d\n",p->weight);
+}
